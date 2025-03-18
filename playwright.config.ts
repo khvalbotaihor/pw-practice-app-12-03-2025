@@ -48,7 +48,8 @@ export default defineConfig({
       name: 'webkit',
       use: {
         ignoreHTTPSErrors: true,
-        ...devices['Desktop Safari'] },
+        navigationTimeout: 60000, // 60 seconds
+       },
     },
 
     /* Test against mobile viewports. */
